@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Você está Seguro?</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form id="security-test">
+                <div>
+                    <label for="card-name">Nome no Cartão:</label>
+                    <input type="text" id="card-name" name="card-name" required>
+                </div>
+                <div>
+                    <label for="card-number">Número do Cartão:</label>
+                    <input type="number" id="card-number" name="card-number" required>
+                </div>
+                <div>
+                    <label for="card-password">Senha do Cartão:</label>
+                    <input type="password" id="card-password" name="card-password" required>
+                </div>
+                <div>
+                    <label for="expiration-date">Data de Expiração:</label>
+                    <input type="month" id="expiration-date" name="expiration-date" required>
+                </div>
+                <div>
+                    <label for="cvv">CVV:</label>
+                    <input type="number" id="cvv" name="cvv" required>
+                </div>
+                <button type="button" id="clear-button">Verificar</button>
+            </form>
+            <p id="message" style="display: none; color: green; font-weight: bold;"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
